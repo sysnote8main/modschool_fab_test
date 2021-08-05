@@ -42,5 +42,5 @@ jobs:
         with:
           upload_url: ${{ steps.create_release.outputs.upload_url }}
           asset_path: build/libs/sysnote8-test-0.0.1.jar
-          asset_name: test-1.17.1-${{ github.ref }}.jar
+          asset_name: test-1.17.jar
           asset_content_type: application/zip
