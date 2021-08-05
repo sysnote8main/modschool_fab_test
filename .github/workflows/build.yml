@@ -27,10 +27,11 @@ jobs:
         with:
           java-version: ${{ matrix.java }}
       - name: make gradle wrapper executable
-        if: ${{ runner.os != 'Windows' }}
         run: chmod +x ./gradlew
       - name: build
         run: ./gradlew build
+      - name: make gradle wrapper executable
+        run: chmod +rwx ./build
       - name: Create Release
         id: create_release
         uses: actions/create-release@v1
