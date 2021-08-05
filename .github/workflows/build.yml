@@ -30,7 +30,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} 
         with:
-          tag_name: v1.0-$(date +'%Y-%m-%dT%H:%M:%S') #$(date +'%Y-%m-%dT%H:%M:%S') ${{ steps.date.outputs.date }}
+          tag_name: ${{ github.ref }} #$(date +'%Y-%m-%dT%H:%M:%S') ${{ steps.date.outputs.date }}
           release_name: Release 1.17.1 fabric mod
           draft: false
           prerelease: false
@@ -42,5 +42,5 @@ jobs:
         with:
           upload_url: ${{ steps.create_release.outputs.upload_url }}
           asset_path: build/libs/sysnote8-test-0.0.1.jar
-          asset_name: test-1.17.1b.jar
+          asset_name: test-1.17.1-${{ github.ref }}.jar
           asset_content_type: application/zip
