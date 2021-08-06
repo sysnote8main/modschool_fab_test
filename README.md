@@ -1,4 +1,4 @@
-# Fabric Mod
+# Fabric Mods
 
 ## Setup
 
