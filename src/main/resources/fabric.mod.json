@@ -3,8 +3,8 @@
   "id": "modid",
   "version": "${version}",
 
-  "name": "test mod",
-  "description": "sysnote8's mod for modschool",
+  "name": "sysnote8 mod",
+  "description": "sysnote8's mod for modschool.",
   "authors": [
     "Me!"
   ],
@@ -18,7 +18,7 @@
   "environment": "*",
   "entrypoints": {
     "main": [
-      "com.sysnote8main.modschool_fab_test"
+      "com.github.sysnote8main.modschool_fab_test"
     ]
   },
   "mixins": [
